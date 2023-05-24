@@ -18,7 +18,7 @@ function BookContextProvider({ children }) {
     useEffect(() => {
         async function fetchData() {
             setIsLoading(true);
-            await fetch("http://localhost:4000/books/")
+            await fetch("https://e-combackend-1e3g.onrender.com/books")
                 .then((response) => response.json())
                 .then((data) => {
                     if (componentMuted) {

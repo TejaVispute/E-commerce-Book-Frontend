@@ -59,7 +59,7 @@ export const Cart = () => {
     const callAboutPage = async () => {
 
         try {
-            const res = await fetch("http://localhost:4000/cart", {
+            const res = await fetch("https://e-combackend-1e3g.onrender.com/cart", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",

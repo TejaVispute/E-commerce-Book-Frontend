@@ -26,7 +26,7 @@ export const PlaceOrder = () => {
     const callAboutPage = async () => {
 
         try {
-            const res = await fetch("http://localhost:4000/placeorderres", {
+            const res = await fetch("https://e-combackend-1e3g.onrender.com/placeorderres", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
@@ -80,7 +80,7 @@ export const PlaceOrder = () => {
         }
 
 
-        const data = await fetch("http://localhost:4000/razorpay", { method: "POST" }).then((e) => e.json());
+        const data = await fetch("https://e-combackend-1e3g.onrender.com/razorpay", { method: "POST" }).then((e) => e.json());
         console.log(data, "hello");
 
         var options = {
@@ -96,7 +96,7 @@ export const PlaceOrder = () => {
                 // alert(response.razorpay_order_id);
                 // alert(response.razorpay_signature)
                 // console.log(response, "Razorpay Reaponse");
-                await axios.post("http://localhost:4000/placeorder", { cart, userEmail, response, totalPrice })
+                await axios.post("https://e-combackend-1e3g.onrender.com/placeorder", { cart, userEmail, response, totalPrice })
                 setCart([]);
                 localStorage.removeItem("cart");
                 navigate("/previusorders")

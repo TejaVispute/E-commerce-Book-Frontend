@@ -25,7 +25,7 @@ export const Signup = () => {
         e.preventDefault();
 
         const { name, email, phone, address, password, cpassword } = user;
-        const res = await fetch("http://localhost:4000/register", {
+        const res = await fetch("https://e-combackend-1e3g.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -6,7 +6,7 @@ const OrderHistory = () => {
     const getUserHistory = async () => {
 
         try {
-            const res = await fetch("http://localhost:4000/orderHistory", {
+            const res = await fetch("https://e-combackend-1e3g.onrender.com/orderHistory", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",

@@ -28,7 +28,7 @@ function Nav() {
   const getUserDetails = async () => {
 
     try {
-      const res = await fetch("http://localhost:4000", {
+      const res = await fetch("https://e-combackend-1e3g.onrender.com", {
         method: "GET",
         headers: {
           Accept: "application/json",

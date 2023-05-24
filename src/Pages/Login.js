@@ -15,7 +15,7 @@ const Login = () => {
     const loginUser = async (e) => {
         e.preventDefault();
 
-        const res = await fetch('http://localhost:4000/signin', {
+        const res = await fetch('https://e-combackend-1e3g.onrender.com/signin', {
             method: "POST",
             credentials: 'include',
             headers: {

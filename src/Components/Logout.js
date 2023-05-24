@@ -10,7 +10,7 @@ export const Logout = () => {
 
     let navigate = useNavigate();
     useEffect(() => {
-        fetch('http://localhost:4000/logout', {
+        fetch('https://e-combackend-1e3g.onrender.com/logout', {
             method: "GET",
             headers: {
                 Accept: "application/json",
